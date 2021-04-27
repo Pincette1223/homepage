@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 30px;
+    height: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c5675;
+    padding: 8px 12px;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar__logo i {
+    color: white;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    color: white;
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+    background-color:  #d49668;
+    border-radius: 4px;
+}
+
+.navbar__links {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__links li {
+    padding: 8px 12px;
+}
+
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+}
+
+.my_information {
+    margin: 50px;
+    font-size: 24px;
+    padding: 30px;
+    line-height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.my_information > h2,
+.homepage_information > h2 {
+    text-align: center;
+}
+
+.homepage_information {
+    margin: 50px;
+    padding: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.homepage_information > dl > dd {
+    font-size: 20px;
+}
+
+.myTitle {
+    margin: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.my_code {
+    margin: 50px;
+    font-size: 24px;
+}
+
+.memopad,
+.paintJS,
+.NewYearLuck,
+.pincette1223,
+.website {
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.open_code,
+.open_site {
+    font-size: 18px;
+    cursor: pointer;
+    text-align: right;
+}
+
+#version {
+    text-align: center;
+    font-size: 15px;
+    margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__links {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__links.active {
+        display: flex;
+    }
+    
+    .my_information {
+        margin: 30px;
+        font-size: 16px;
+        padding: 5px;
+        line-height: 30px;
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+
+    .homepage_information {
+        margin: 30px;
+        font-size: 16px;
+        padding: 5px;
+        line-height: 17px;
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+
+    .homepage_information > dl > dd {
+        font-size: 13px;
+    }
+
+    .memopad,
+    .paintJS,
+    .NewYearLuck,
+    .pincette1223,
+    .website {
+        margin: 8px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #version {
+        text-align: center;
+        font-size: 12px;
+        margin: 30px;
+    }
+}
